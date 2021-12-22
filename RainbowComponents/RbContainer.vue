@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "Container",
+  name: "RbContainer",
 }
 </script>
 
