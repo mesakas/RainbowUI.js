@@ -1,0 +1,799 @@
+/***************************** 设置默认的字体样式 *****************************/
+* {
+    /*color: #595959;*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/***************************** 将body的默认边距删除 *****************************/
+body {
+    margin: 0;
+}
+
+
+/***************************** 组件颜色 *****************************/
+.RB_red {
+    background-color: #b9513d;
+    color: #ffffff;
+}
+
+.RB_origin {
+    background-color: #c26d27;
+    color: #ffffff;
+}
+
+.RB_yellow {
+    background-color: #d3c32b;
+    color: #ffffff;
+}
+
+.RB_green {
+    background-color: #75ce4b;
+    color: #ffffff;
+}
+
+.RB_cyan {
+    background-color: #69c49e;
+    color: #ffffff;
+}
+
+.RB_blue {
+    background-color: #35a0b9;
+    color: #ffffff;
+}
+
+.RB_violet {
+    background-color: #955ac7;
+    color: #ffffff;
+}
+
+.RB_white {
+    background-color: #ffffff;
+    color: #5d5d5d;
+}
+
+.RB_black {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.RB_light {
+    background-color: #f5f5f5;
+    color: #252525;
+    border-color: #252525;
+}
+
+.RB_dark {
+    background-color: #313131;
+    color: #ffffff;
+}
+
+.RB_dark-l1 {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.RB_dark-l2 {
+    background-color: #262626;
+    color: #ffffff;
+}
+
+.RB_dark-l3 {
+    background-color: #232323;
+    color: #ffffff;
+}
+
+.RB_dark-l4 {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+.RB_dark-l5 {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+
+/********* 选取内容时的高亮显示 *********/
+.RB_red::selection, .RB_red > *::selection {
+    background-color: #ffffff;
+    color: #b9513d;
+}
+
+.RB_origin::selection, .RB_origin > *::selection {
+    background-color: #ffffff;
+    color: #c26d27;
+}
+
+.RB_yellow::selection, .RB_yellow > *::selection {
+    background-color: #ffffff;
+    color: #d3c32b;
+}
+
+.RB_green::selection, .RB_green > *::selection {
+    background-color: #ffffff;
+    color: #75ce4b;
+}
+
+.RB_cyan::selection, .RB_cyan > *::selection {
+    background-color: #ffffff;
+    color: #69c49e;
+}
+
+.RB_blue::selection, .RB_blue > *::selection {
+    background-color: #ffffff;
+    color: #35a0b9;
+}
+
+.RB_violet::selection, .RB_violet > *::selection {
+    background-color: #ffffff;
+    color: #955ac7;
+}
+
+.RB_light::selection, .RB_light > *::selection {
+    background-color: #252525;
+    color: #f5f5f5;
+}
+
+.RB_white::selection, .RB_white > *::selection {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+.RB_dark::selection, .RB_dark > *::selection,
+.RB_dark-l1::selection, .RB_dark-l1 > *::selection,
+.RB_dark-l2::selection, .RB_dark-l2 > *::selection,
+.RB_dark-l3::selection, .RB_dark-l3 > *::selection,
+.RB_dark-l4::selection, .RB_dark-l4 > *::selection,
+.RB_dark-l5::selection, .RB_dark-l5 > *::selection,
+.RB_black::selection {
+    background-color: #ffffff;
+    color: #313131;
+}
+
+
+/********* 触摸时提高亮度 *********/
+.RB_red-highlight-hover:hover {
+    background-color: #f64b2a;
+    color: #ffffff;
+}
+
+.RB_origin-highlight-hover:hover {
+    background-color: #ea7619;
+    color: #ffffff;
+}
+
+.RB_yellow-highlight-hover:hover {
+    background-color: #ecd71f;
+    color: #ffffff;
+}
+
+.RB_green-highlight-hover:hover {
+    background-color: #6ce737;
+    color: #ffffff;
+}
+
+.RB_cyan-highlight-hover:hover {
+    background-color: #72e5b4;
+    color: #ffffff;
+}
+
+.RB_blue-highlight-hover:hover {
+    background-color: #16bfe7;
+    color: #ffffff;
+}
+
+.RB_violet-highlight-hover:hover {
+    background-color: #ba73f6;
+    color: #ffffff;
+}
+
+.RB_dark-highlight-hover:hover {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+.RB_light-highlight-hover:hover {
+    background-color: #ffffff;
+    color: #313131;
+}
+
+/********* 触摸时降低亮度 *********/
+.RB_red-lowlight-hover:hover {
+    background-color: #983321;
+    color: #ffffff;
+}
+
+.RB_origin-lowlight-hover:hover {
+    background-color: #9b5215;
+    color: #ffffff;
+}
+
+.RB_yellow-lowlight-hover:hover {
+    background-color: #b7a81d;
+    color: #ffffff;
+}
+
+.RB_green-lowlight-hover:hover {
+    background-color: #5fb437;
+    color: #ffffff;
+}
+
+.RB_cyan-lowlight-hover:hover {
+    background-color: #4fa681;
+    color: #ffffff;
+}
+
+.RB_blue-lowlight-hover:hover {
+    background-color: #278ba2;
+    color: #ffffff;
+}
+
+.RB_violet-lowlight-hover:hover {
+    background-color: #733da1;
+    color: #ffffff;
+}
+
+.RB_dark-lowlight-hover:hover {
+    background-color: #505050;
+    color: #ffffff;
+}
+
+.RB_light-lowlight-hover:hover {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+.RB_white-lowlight-hover:hover {
+    background-color: #f6f6f6;
+    color: #000000;
+}
+
+
+/***************************** 背景等级颜色 *****************************/
+.RB_bg-color-l1 {
+    background-color: #ffffff;
+    color: #494949;
+}
+
+.RB_bg-color-l2 {
+    background-color: #f3f3f3;
+    color: #494949;
+}
+
+.RB_bg-color-l3 {
+    background-color: #e3e3e3;
+    color: #494949;
+}
+
+.RB_bg-color-l4 {
+    background-color: #d5d5d5;
+    color: #414141;
+}
+
+.RB_bg-color-l5 {
+    background-color: #b9b9b9;
+    color: #2f2f2f;
+}
+
+.RB_bg-color-l6 {
+    background-color: #737373;
+    color: #ececec;
+}
+
+.RB_bg-color-l7 {
+    background-color: #525252;
+    color: #ececec;
+}
+
+/********* 冷色调 *********/
+.RB_bg-color-cool-l1 {
+    background-color: #ffffff;
+    color: #494949;
+}
+
+.RB_bg-color-cool-l2 {
+    background-color: #edeff3;
+    color: #494949;
+}
+
+.RB_bg-color-cool-l3 {
+    background-color: #dcdee3;
+    color: #494949;
+}
+
+.RB_bg-color-cool-l4 {
+    background-color: #d0d2d5;
+    color: #414141;
+}
+
+.RB_bg-color-cool-l5 {
+    background-color: #b5b6b9;
+    color: #2f2f2f;
+}
+
+.RB_bg-color-cool-l6 {
+    background-color: #6f7073;
+    color: #ececec;
+}
+
+.RB_bg-color-cool-l7 {
+    background-color: #535456;
+    color: #ececec;
+}
+
+/********* 暖色调 *********/
+.RB_bg-color-warm-l1 {
+    background-color: #ffffff;
+    color: #494949;
+}
+
+.RB_bg-color-warm-l2 {
+    background-color: #f3eded;
+    color: #494949;
+}
+
+.RB_bg-color-warm-l3 {
+    background-color: #e3dcdc;
+    color: #494949;
+}
+
+.RB_bg-color-warm-l4 {
+    background-color: #d5cfcf;
+    color: #414141;
+}
+
+.RB_bg-color-warm-l5 {
+    background-color: #b9b5b5;
+    color: #2f2f2f;
+}
+
+.RB_bg-color-warm-l6 {
+    background-color: #737070;
+    color: #ececec;
+}
+
+.RB_bg-color-warm-l7 {
+    background-color: #545151;
+    color: #ececec;
+}
+
+/********* 场景中的文字选中高亮颜色 *********/
+.RB_bg-color-l1::selection, .RB_bg-color-cool-l1::selection, .RB_bg-color-warm-l1::selection,
+.RB_bg-color-l2::selection, .RB_bg-color-cool-l2::selection, .RB_bg-color-warm-l2::selection,
+.RB_bg-color-l3::selection, .RB_bg-color-cool-l3::selection, .RB_bg-color-warm-l3::selection,
+.RB_bg-color-l4::selection, .RB_bg-color-cool-l4::selection, .RB_bg-color-warm-l4::selection,
+.RB_bg-color-l5::selection, .RB_bg-color-cool-l5::selection, .RB_bg-color-warm-l5::selection {
+    background-color: #424242;
+    color: #ececec;
+}
+
+
+.RB_bg-color-l6::selection, .RB_bg-color-cool-l6::selection, .RB_bg-color-warm-l6::selection,
+.RB_bg-color-l7::selection, .RB_bg-color-cool-l7::selection, .RB_bg-color-warm-l7::selection {
+    background-color: #ececec;
+    color: #424242;
+}
+
+
+/***************************** 组件垂直阴影高度  *****************************/
+.RB_shadow-vertical-l1 {
+    box-shadow: 0 1px 5px -2px #22222288;
+}
+
+.RB_shadow-vertical-l2 {
+    box-shadow: 0 2px 6px -2px #22222288;
+}
+
+.RB_shadow-vertical-l3 {
+    box-shadow: 0 3px 7px -2px #22222266;
+}
+
+.RB_shadow-vertical-l4 {
+    box-shadow: 0 4px 10px -2px #22222258;
+}
+
+.RB_shadow-vertical-l5 {
+    box-shadow: 0 5px 12px -2px #22222255;
+}
+
+.RB_shadow-vertical-l6 {
+    box-shadow: 0 6px 13px -2px #22222255;
+}
+
+.RB_shadow-vertical-l7 {
+    box-shadow: 0 7px 15px -2px #22222244;
+}
+
+.RB_shadow-vertical-l8 {
+    box-shadow: 0 10px 18px -2px #22222244;
+}
+
+.RB_shadow-vertical-l9 {
+    box-shadow: 0 15px 25px -2px #22222242;
+}
+
+.RB_shadow-vertical-l10 {
+    box-shadow: 0 17px 30px -2px #22222240;
+}
+
+/***************************** 阴影高度(45deg)  *****************************/
+.RB_shadow-l1 {
+    box-shadow: 1px 1px 5px -2px #22222288;
+}
+
+.RB_shadow-l2 {
+    box-shadow: 2px 2px 6px -2px #22222288;
+}
+
+.RB_shadow-l3 {
+    box-shadow: 3px 3px 7px -2px #22222266;
+}
+
+.RB_shadow-l4 {
+    box-shadow: 4px 4px 10px -2px #22222258;
+}
+
+.RB_shadow-l5 {
+    box-shadow: 5px 5px 12px -2px #22222255;
+}
+
+.RB_shadow-l6 {
+    box-shadow: 6px 6px 13px -2px #22222255;
+}
+
+.RB_shadow-l7 {
+    box-shadow: 7px 7px 15px -2px #22222244;
+}
+
+.RB_shadow-l8 {
+    box-shadow: 8px 10px 18px -2px #22222244;
+}
+
+.RB_shadow-l9 {
+    box-shadow: 15px 15px 25px -2px #22222242;
+}
+
+.RB_shadow-l10 {
+    box-shadow: 17px 17px 30px -2px #22222240;
+}
+
+
+/***************************** 圆角大小 *****************************/
+.RB_corner-radius-l1 {
+    border-radius: 3px;
+}
+
+.RB_corner-radius-l2 {
+    border-radius: 5px;
+}
+
+.RB_corner-radius-l3 {
+    border-radius: 7px;
+}
+
+.RB_corner-radius-l4 {
+    border-radius: 10px;
+}
+
+.RB_corner-radius-l5 {
+    border-radius: 20px;
+}
+
+.RB_corner-radius-l6 {
+    border-radius: 30px;
+}
+
+.RB_corner-radius-l7 {
+    border-radius: 10000px;
+}
+
+
+/***************************** 缓动时间 *****************************/
+.RB_duration-l1 {
+    transition-duration: .2s;
+}
+
+.RB_duration-l2 {
+    transition-duration: .3s;
+}
+
+.RB_duration-l3 {
+    transition-duration: .5s;
+}
+
+.RB_duration-l4 {
+    transition-duration: 1s;
+}
+
+.RB_duration-l5 {
+    transition-duration: 3s;
+}
+
+
+/***************************** 边框 *****************************/
+.RB_border-l1 {
+    border: 1px solid;
+}
+
+.RB_border-l2 {
+    border: 2px solid;
+}
+
+.RB_border-l3 {
+    border: 3px solid;
+}
+
+.RB_border-l4 {
+    border: 5px solid;
+}
+
+
+/***************************** 外边距 *****************************/
+/* 四边边距 */
+.RB_margin-l1 {
+    margin: 5px;
+}
+
+.RB_margin-l2 {
+    margin: 10px;
+}
+
+.RB_margin-l3 {
+    margin: 20px;
+}
+
+.RB_margin-l4 {
+    margin: 50px;
+}
+
+.RB_margin-l5 {
+    margin: 100px;
+}
+
+/* 底部边距 */
+.RB_margin-bottom-l1 {
+    margin-bottom: 5px;
+}
+
+.RB_margin-bottom-l2 {
+    margin-bottom: 10px;
+}
+
+.RB_margin-bottom-l3 {
+    margin-bottom: 20px;
+}
+
+.RB_margin-bottom-l4 {
+    margin-bottom: 50px;
+}
+
+.RB_margin-bottom-l5 {
+    margin-bottom: 100px;
+}
+
+/* 左边距 */
+.RB_margin-left-l1 {
+    margin-left: 5px;
+}
+
+.RB_margin-left-l2 {
+    margin-left: 10px;
+}
+
+.RB_margin-left-l3 {
+    margin-left: 20px;
+}
+
+.RB_margin-left-l4 {
+    margin-left: 50px;
+}
+
+.RB_margin-left-l5 {
+    margin-left: 100px;
+}
+
+/* 右边距 */
+.RB_margin-right-l1 {
+    margin-right: 5px;
+}
+
+.RB_margin-right-l2 {
+    margin-right: 10px;
+}
+
+.RB_margin-right-l3 {
+    margin-right: 20px;
+}
+
+.RB_margin-right-l4 {
+    margin-right: 50px;
+}
+
+.RB_margin-right-l5 {
+    margin-right: 100px;
+}
+
+/* 顶部边距 */
+.RB_margin-top-l1 {
+    margin-top: 5px;
+}
+
+.RB_margin-top-l2 {
+    margin-top: 10px;
+}
+
+.RB_margin-top-l3 {
+    margin-top: 20px;
+}
+
+.RB_margin-top-l4 {
+    margin-top: 50px;
+}
+
+.RB_margin-top-l5 {
+    margin-top: 100px;
+}
+
+/***************************** 内边距 *****************************/
+/* 四边边距 */
+.RB_padding-l1 {
+    padding: 5px;
+}
+
+.RB_padding-l2 {
+    padding: 10px;
+}
+
+.RB_padding-l3 {
+    padding: 20px;
+}
+
+.RB_padding-l4 {
+    padding: 50px;
+}
+
+.RB_padding-l5 {
+    padding: 100px;
+}
+
+
+/* 底部边距 */
+.RB_padding-bottom-l1 {
+    padding-bottom: 5px;
+}
+
+.RB_padding-bottom-l2 {
+    padding-bottom: 10px;
+}
+
+.RB_padding-bottom-l3 {
+    padding-bottom: 20px;
+}
+
+.RB_padding-bottom-l4 {
+    padding-bottom: 50px;
+}
+
+.RB_padding-bottom-l5 {
+    padding-bottom: 100px;
+}
+
+/* 左边距 */
+.RB_padding-left-l1 {
+    padding-left: 5px;
+}
+
+.RB_padding-left-l2 {
+    padding-left: 10px;
+}
+
+.RB_padding-left-l3 {
+    padding-left: 20px;
+}
+
+.RB_padding-left-l4 {
+    padding-left: 50px;
+}
+
+.RB_padding-left-l5 {
+    padding-left: 100px;
+}
+
+/* 右边距 */
+.RB_padding-right-l1 {
+    padding-right: 5px;
+}
+
+.RB_padding-right-l2 {
+    padding-right: 10px;
+}
+
+.RB_padding-right-l3 {
+    padding-right: 20px;
+}
+
+.RB_padding-right-l4 {
+    padding-right: 50px;
+}
+
+.RB_padding-right-l5 {
+    padding-right: 100px;
+}
+
+/* 顶部边距 */
+.RB_padding-top-l1 {
+    padding-top: 5px;
+}
+
+.RB_padding-top-l2 {
+    padding-top: 10px;
+}
+
+.RB_padding-top-l3 {
+    padding-top: 20px;
+}
+
+.RB_padding-top-l4 {
+    padding-top: 50px;
+}
+
+.RB_padding-top-l5 {
+    padding-top: 100px;
+}
+
+
+/***************************** flex *****************************/
+.RB_flex {
+    display: flex;
+}
+
+/* 居中 */
+.RB_flex-center {
+    justify-content: center;
+}
+
+/* 向两边散开 */
+.RB_flex-space-between {
+    justify-content: space-between;
+}
+
+/* 均匀的散开 */
+.RB_flex-space-around {
+    justify-content: space-around;
+}
+
+/* 垂直居中 */
+.RB_flex-vertical-center {
+    align-content: center;
+}
+
+/* 纵向排列 */
+.RB_flex-lengthways {
+    flex-direction: column;
+}
+
+/***************************** 使用flex布局后的切分 *****************************/
+.RB_col-2 {
+    width: 50%;
+}
+
+.RB_col-3 {
+    width: 33.33333333333%;
+}
+
+.RB_col-4 {
+    width: 25%;
+}
+
+.RB_col-6 {
+    width: 20%;
+}
+
+.RB_col-8 {
+    width: 12.5%;
+}
+
+
+
+
