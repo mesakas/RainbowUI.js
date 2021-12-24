@@ -14,11 +14,17 @@ export default {
     theme: {
       default: 'white',
       type: String
+    },
+    shadow: {
+      default: false,
+      type: Boolean
     }
   },
   computed: {
     css() {
-      let attr = ['page', 'RB_duration-l4', 'RB_shadow-vertical-l5', 'RB_' + this.theme]
+      let attr = ['page', 'RB_duration-l4', 'RB_' + this.theme]
+      if (this.shadow) attr.push('RB_shadow-vertical-l5')
+
       return this.styleComputed(attr)
     }
   }

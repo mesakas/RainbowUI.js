@@ -63,5 +63,6 @@ export default {
   padding: 0 23px;
   display: inline;
   border: none;
+  user-select: none;
 }
 </style>
