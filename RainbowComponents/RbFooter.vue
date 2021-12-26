@@ -22,7 +22,7 @@ export default {
     },
     // null low high
     highlight: {
-      default: "low",
+      default: "",
       type: String
     },
     duration: {

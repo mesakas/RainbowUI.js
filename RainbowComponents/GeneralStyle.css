@@ -151,104 +151,104 @@ body {
     color: #313131;
 }
 
+@media screen and (min-width: 701px) {
+    /********* 触摸时提高亮度 *********/
+    .RB_red-highlight-hover:hover {
+        background-color: #f64b2a;
+        color: #ffffff;
+    }
 
-/********* 触摸时提高亮度 *********/
-.RB_red-highlight-hover:hover {
-    background-color: #f64b2a;
-    color: #ffffff;
+    .RB_origin-highlight-hover:hover {
+        background-color: #ea7619;
+        color: #ffffff;
+    }
+
+    .RB_yellow-highlight-hover:hover {
+        background-color: #ecd71f;
+        color: #ffffff;
+    }
+
+    .RB_green-highlight-hover:hover {
+        background-color: #6ce737;
+        color: #ffffff;
+    }
+
+    .RB_cyan-highlight-hover:hover {
+        background-color: #72e5b4;
+        color: #ffffff;
+    }
+
+    .RB_blue-highlight-hover:hover {
+        background-color: #16bfe7;
+        color: #ffffff;
+    }
+
+    .RB_violet-highlight-hover:hover {
+        background-color: #ba73f6;
+        color: #ffffff;
+    }
+
+    .RB_dark-highlight-hover:hover {
+        background-color: #171717;
+        color: #ffffff;
+    }
+
+    .RB_light-highlight-hover:hover {
+        background-color: #ffffff;
+        color: #313131;
+    }
+
+    /********* 触摸时降低亮度 *********/
+    .RB_red-lowlight-hover:hover {
+        background-color: #983321;
+        color: #ffffff;
+    }
+
+    .RB_origin-lowlight-hover:hover {
+        background-color: #9b5215;
+        color: #ffffff;
+    }
+
+    .RB_yellow-lowlight-hover:hover {
+        background-color: #b7a81d;
+        color: #ffffff;
+    }
+
+    .RB_green-lowlight-hover:hover {
+        background-color: #5fb437;
+        color: #ffffff;
+    }
+
+    .RB_cyan-lowlight-hover:hover {
+        background-color: #4fa681;
+        color: #ffffff;
+    }
+
+    .RB_blue-lowlight-hover:hover {
+        background-color: #278ba2;
+        color: #ffffff;
+    }
+
+    .RB_violet-lowlight-hover:hover {
+        background-color: #733da1;
+        color: #ffffff;
+    }
+
+    .RB_dark-lowlight-hover:hover {
+        background-color: #505050;
+        color: #ffffff;
+    }
+
+    .RB_light-lowlight-hover:hover {
+        background-color: #e0e0e0;
+        color: #000000;
+    }
+
+    .RB_white-lowlight-hover:hover {
+        background-color: #f6f6f6;
+        color: #000000;
+    }
 }
-
-.RB_origin-highlight-hover:hover {
-    background-color: #ea7619;
-    color: #ffffff;
-}
-
-.RB_yellow-highlight-hover:hover {
-    background-color: #ecd71f;
-    color: #ffffff;
-}
-
-.RB_green-highlight-hover:hover {
-    background-color: #6ce737;
-    color: #ffffff;
-}
-
-.RB_cyan-highlight-hover:hover {
-    background-color: #72e5b4;
-    color: #ffffff;
-}
-
-.RB_blue-highlight-hover:hover {
-    background-color: #16bfe7;
-    color: #ffffff;
-}
-
-.RB_violet-highlight-hover:hover {
-    background-color: #ba73f6;
-    color: #ffffff;
-}
-
-.RB_dark-highlight-hover:hover {
-    background-color: #171717;
-    color: #ffffff;
-}
-
-.RB_light-highlight-hover:hover {
-    background-color: #ffffff;
-    color: #313131;
-}
-
-/********* 触摸时降低亮度 *********/
-.RB_red-lowlight-hover:hover {
-    background-color: #983321;
-    color: #ffffff;
-}
-
-.RB_origin-lowlight-hover:hover {
-    background-color: #9b5215;
-    color: #ffffff;
-}
-
-.RB_yellow-lowlight-hover:hover {
-    background-color: #b7a81d;
-    color: #ffffff;
-}
-
-.RB_green-lowlight-hover:hover {
-    background-color: #5fb437;
-    color: #ffffff;
-}
-
-.RB_cyan-lowlight-hover:hover {
-    background-color: #4fa681;
-    color: #ffffff;
-}
-
-.RB_blue-lowlight-hover:hover {
-    background-color: #278ba2;
-    color: #ffffff;
-}
-
-.RB_violet-lowlight-hover:hover {
-    background-color: #733da1;
-    color: #ffffff;
-}
-
-.RB_dark-lowlight-hover:hover {
-    background-color: #505050;
-    color: #ffffff;
-}
-
-.RB_light-lowlight-hover:hover {
-    background-color: #e0e0e0;
-    color: #000000;
-}
-
-.RB_white-lowlight-hover:hover {
-    background-color: #f6f6f6;
-    color: #000000;
-}
-
 
 /***************************** 背景等级颜色 *****************************/
 .RB_bg-color-l1 {

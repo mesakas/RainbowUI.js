@@ -1,6 +1,7 @@
 <template>
   <div class="RB_inline">
-    <input :class="css" :type="type" v-model="value" :placeholder="placeholder" :style="'width:' + width">
+    <input :class="css" :type="type" v-model="value" @keydown="emitEnterKey" :placeholder="placeholder"
+           :style="'width:' + width+';' + 'text-align:' + align">
   </div>
 </template>
 
@@ -31,6 +32,11 @@ export default {
       default: "2",
       type: String
     },
+    align: {
+      default: "left",
+      type: String
+    },
+
   },
   data() {
     return {
@@ -53,6 +59,13 @@ export default {
 
       return this.styleComputed(attr)
     }
+  },
+  methods: {
+    emitEnterKey(e) {
+      if (e.key.toLowerCase() === 'enter') {
+        this.$emit('enterKeyDown')
+      }
+    }
   }
 }
 </script>
@@ -70,6 +83,10 @@ export default {
   outline: 1px solid #22222244;
   height: 36px;
   box-sizing: border-box;
+}
+
+.RB_input::placeholder {
+  font-size: 14px;
 }
 
 .RB_input:focus {

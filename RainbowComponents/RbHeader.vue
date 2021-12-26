@@ -41,7 +41,7 @@ export default {
       type: String
     },
     highlight: {
-      default: "low",
+      default: "",
       type: String
     },
     duration: {

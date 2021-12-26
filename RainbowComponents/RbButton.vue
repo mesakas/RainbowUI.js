@@ -3,6 +3,7 @@
           @click="(e)=> { $emit('click', e) }"
           @mousedown="(e)=> { $emit('mousedown', e) }"
           @mouseup="(e)=> { $emit('mouseup', e) }"
+          :style="!!width? ('width:' + width):''"
   >{{ label }}
   </button>
 </template>
@@ -37,6 +38,10 @@ export default {
     hover_mode: {
       default: "lowlight",
       type: String
+    },
+    width: {
+      default: "",
+      type: String
     }
 
   },
@@ -64,5 +69,6 @@ export default {
   display: inline;
   border: none;
   user-select: none;
+  box-sizing: border-box;
 }
 </style>
